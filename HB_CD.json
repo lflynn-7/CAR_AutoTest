@@ -1,0 +1,404 @@
+{
+	"Notification_Version": "2.601.002",
+	"Message_Type": "HB",
+	"Telematics_Box_ID": "34304B515336565A",
+	"Telematics_Box_Hardware_Variant": "1.0",
+	"Telematics_Box_Software_Version": "1.0",
+	"Telematics_Partner_Message_ID": "821694100108476416",
+	"Telematics_Partner_Name": "DFAC",
+	"Customer_Reference": "Customer-DFAC",
+	"Equipment_ID": "???A.DFAC",
+	"Engine_Serial_Number": "82058157",
+	"VIN": "LGDXWB1V0LH127422",
+	"Occurrence_Date_Time": "2021-03-17T02:38:57.000Z",
+	"Sent_Date_Time": "2021-03-17T02:38:59.804Z",
+	"Source_Address": "0",
+	"Active_Faults": [{
+		"SPN": "251",
+		"FMI": "9",
+		"Occurrence_Count": "1",
+		"Fault_Source_Address": "0"
+	}],
+	"Latitude": "32.12623",
+	"Longitude": "112.173877",
+	"Altitude": "0",
+	"Direction_Heading": "E",
+	"Vehicle_Distance": "4353.625",
+	"Location_Text_Description": "????????? ????????? ?????????",
+	"GPS_Vehicle_Speed": "12",
+	"Gradient": "0",
+	"Accel Rate": "0",
+	"Fuel TANK Level": "17.2",
+	"Vehicle_Model": "LD51-002-901A D9 2670",
+	"Gross_Vehicle_Weight": "16000",
+	"Rear Axle Ratio": "3.909",
+	"Transmission Model": "??????9???",
+	"Tire Model": "295/80R22.5 ",
+	"Driven_Equipment": "1",
+	"Customer_Equipment_Group": [{
+		"value": "Hubei"
+	}],
+	"Snapshots": [{
+		"Snapshot_DateTimestamp": "2021-03-17T02:38:57.000Z",
+		"Parameter": [{
+			"Name": "Calibration Verification Number[DM19]",
+			"Value": "1059319775"
+		},
+		{
+			"Name": "Calibration Identification[DM19]",
+			"Value": "SC95491"
+		},
+		{
+			"Name": "Engine Fan 1 Requested Percent Speed",
+			"Value": "0"
+		},
+		{
+			"Name": "Diesel Particulate Filter Regeneration Inhibit Switch",
+			"Value": "1"
+		},
+		{
+			"Name": "Diesel Particulate Filter Regeneration Force Switch",
+			"Value": "0"
+		},
+		{
+			"Name": "Accelerator Pedal Position 1",
+			"Value": "0"
+		},
+		{
+			"Name": "Engine Percent Load At Current Speed",
+			"Value": "30"
+		},
+		{
+			"Name": "Actual Maximum Available Engine - Percent Torque",
+			"Value": "44"
+		},
+		{
+			"Name": "DPF Thermal Management Active",
+			"Value": "0"
+		},
+		{
+			"Name": "SCR Thermal Management Active",
+			"Value": "1"
+		},
+		{
+			"Name": "Engine Speed",
+			"Value": "853.875"
+		},
+		{
+			"Name": "Driver's Demand Engine - Percent Torque",
+			"Value": "0"
+		},
+		{
+			"Name": "Actual Engine - Percent Torque",
+			"Value": "20"
+		},
+		{
+			"Name": "Engine Torque Mode",
+			"Value": "0"
+		},
+		{
+			"Name": "Engine Demand - Percent Torque",
+			"Value": "21"
+		},
+		{
+			"Name": "Actual Engine - Percent Torque (Fractional)",
+			"Value": "0.375"
+		},
+		{
+			"Name": "Engine Intake Air Mass Flow Rate",
+			"Value": "151.85"
+		},
+		{
+			"Name": "Aftertreatment 1 SCR Intake Nox 1",
+			"Value": "3012.8"
+		},
+		{
+			"Name": "Aftertreatment 1 Outlet NOx 1",
+			"Value": "3012.8"
+		},
+		{
+			"Name": "Aftertreatment 1 SCR System State",
+			"Value": "15"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Exhaust Fluid Actual Quantity of Integrator",
+			"Value": "6553.5"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Exhaust Fluid Doser Absolute Pressure",
+			"Value": "944"
+		},
+		{
+			"Name": "Engine Exhaust Bank 1 Pressure Regulator Position",
+			"Value": "90.4"
+		},
+		{
+			"Name": "Engine Amber Warning Lamp Command",
+			"Value": "0"
+		},
+		{
+			"Name": "Engine Red Stop Lamp Command",
+			"Value": "0"
+		},
+		{
+			"Name": "OBD Malfunction Indicator Lamp Command",
+			"Value": "0"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Oxidation Catalyst Intake Gas Temperature",
+			"Value": "157.375"
+		},
+		{
+			"Name": "Aftertreatment 1 SCR Intake Temperature",
+			"Value": "63.375"
+		},
+		{
+			"Name": "Aftertreatment 1 SCR Outlet Temperature",
+			"Value": "126.09375"
+		},
+		{
+			"Name": "Gross Combination Weight",
+			"Value": "32636"
+		},
+		{
+			"Name": "Aftertreatment 1 SCR Conversion Efficiency",
+			"Value": "102"
+		},
+		{
+			"Name": "Diesel Particulate Filter 1 Ash Load Percent",
+			"Value": "0"
+		},
+		{
+			"Name": "Diesel Particulate Filter 1 Time Since Last Active Regeneration",
+			"Value": "308286"
+		},
+		{
+			"Name": "Diesel Particulate Filter Status",
+			"Value": "0"
+		},
+		{
+			"Name": "Diesel Particulate Filter Outlet Pressure 1",
+			"Value": "0.4"
+		},
+		{
+			"Name": "Engine Operating State",
+			"Value": "4"
+		},
+		{
+			"Name": "Engine Derate Request",
+			"Value": "102"
+		},
+		{
+			"Name": "Aftertreatment 1 Total Fuel Used",
+			"Value": "0.5"
+		},
+		{
+			"Name": "Aftertreatment 1 Total Regeneration Time",
+			"Value": "4294967295"
+		},
+		{
+			"Name": "Aftertreatment 1 Total Disabled Time",
+			"Value": "4294967295"
+		},
+		{
+			"Name": "Aftertreatment 1 Total Number of Active Regenerations",
+			"Value": "4294967295"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Particulate Filter Total Number of Active Regeneration Inhibit Requests",
+			"Value": "4294967295"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Particulate Filter Total Number of Active Regeneration Manual Requests",
+			"Value": "4294967295"
+		},
+		{
+			"Name": "Aftertreatment 1 Average Time Between Active Regenerations",
+			"Value": "0"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Exhaust Fluid Concentration",
+			"Value": "33.75"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Particulate Filter Differential Pressure",
+			"Value": "0"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Particulate Filter Outlet Gas Temperature",
+			"Value": "78.375"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Particulate Filter Intake Gas Temperature",
+			"Value": "122.09375"
+		},
+		{
+			"Name": "Time Since Engine Start[DM26]",
+			"Value": "146"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Exhaust Fluid Tank Level",
+			"Value": "19.2"
+		},
+		{
+			"Name": "Aftertreatment 1 Diesel Exhaust Fluid Tank Temperature",
+			"Value": "15"
+		},
+		{
+			"Name": "Aftertreatment SCR Operator Inducement Severity",
+			"Value": "0"
+		},
+		{
+			"Name": "Engine Exhaust Pressure 1",
+			"Value": "142"
+		},
+		{
+			"Name": "Total ECU Run Time",
+			"Value": "249.85"
+		},
+		{
+			"Name": "Fan Drive State",
+			"Value": "0"
+		},
+		{
+			"Name": "Fan Speed",
+			"Value": "8191.875"
+		},
+		{
+			"Name": "High Resolution Total Vehicle Distance",
+			"Value": "4353615"
+		},
+		{
+			"Name": "Software Identification",
+			"Value": "04354597*01031963*090920173700*90502057*ND*BKF*"
+		},
+		{
+			"Name": "Engine Total Idle Hours",
+			"Value": "23.15"
+		},
+		{
+			"Name": "Engine Total Idle Fuel Used",
+			"Value": "48"
+		},
+		{
+			"Name": "Nominal Friction - Percent Torque",
+			"Value": "14"
+		},
+		{
+			"Name": "Estimated Engine Parasitic Losses - Percent Torque",
+			"Value": "126"
+		},
+		{
+			"Name": "Engine Reference Torque",
+			"Value": "1275"
+		},
+		{
+			"Name": "Engine Total Hours of Operation",
+			"Value": "90.85"
+		},
+		{
+			"Name": "Engine Total Revolutions",
+			"Value": "1000"
+		},
+		{
+			"Name": "Engine Trip Fuel",
+			"Value": "743.5"
+		},
+		{
+			"Name": "Engine Total Fuel Used",
+			"Value": "743.5"
+		},
+		{
+			"Name": "Make",
+			"Value": "CMMNS"
+		},
+		{
+			"Name": "Model",
+			"Value": "6B NS6D062       "
+		},
+		{
+			"Name": "Engine Coolant Temperature",
+			"Value": "46"
+		},
+		{
+			"Name": "Engine Oil Temperature 1",
+			"Value": "1774.96875"
+		},
+		{
+			"Name": "Engine Oil Pressure",
+			"Value": "396"
+		},
+		{
+			"Name": "Engine Coolant Level 1",
+			"Value": "100"
+		},
+		{
+			"Name": "Wheel-Based Vehicle Speed",
+			"Value": "26.46875"
+		},
+		{
+			"Name": "Parking Brake Switch",
+			"Value": "0"
+		},
+		{
+			"Name": "Cruise Control Active",
+			"Value": "0"
+		},
+		{
+			"Name": "Brake Switch",
+			"Value": "1"
+		},
+		{
+			"Name": "Clutch Switch",
+			"Value": "1"
+		},
+		{
+			"Name": "Engine Throttle Valve 1 Position 1",
+			"Value": "102"
+		},
+		{
+			"Name": "Barometric Pressure",
+			"Value": "100.5"
+		},
+		{
+			"Name": "Ambient Air Temperature",
+			"Value": "15.4375"
+		},
+		{
+			"Name": "Engine Intake Manifold #1 Pressure",
+			"Value": "0"
+		},
+		{
+			"Name": "Engine Intake Manifold 1 Temperature",
+			"Value": "19"
+		},
+		{
+			"Name": "Battery Potential / Power Input 1",
+			"Value": "27.65"
+		},
+		{
+			"Name": "Emission Control System Operator Inducement Severity",
+			"Value": "0"
+		}]
+	}],
+	"Received_Date_Time": "2021-03-17T02:38:59.855Z",
+	"Error_Code": "0",
+	"Error_Information": "",
+	"Processing_Start_To_Received_Duration": 2325,
+	"EVENT_HUB_PARTITIONID_SEQUENCE_NUMBER": "19:30144",
+	"Processing_Start_Date_Time": "2021-03-17T02:39:02.180Z",
+	"Sent_To_Occurrence_Duration": 2804,
+	"Received_To_Sent_Duration": 51,
+	"Direction_Heading_Degree": "90",
+	"Direction_Heading_Orientation": "E",
+	"OEM": "??????",
+	"Horsepower": "320",
+	"Chassis": "?????????????????????",
+	"Drive": "4X2",
+	"Engine_Model": "ISB",
+	"Service_Model_Name": "ISB",
+	"Displacement": "6.2",
+	"Displacement_Standard": "??????",
+	"Processing_End_Date_Time": "2021-03-17T02:39:02.188Z",
+	"Processing_End_To_Processing_Start_Duration": 8
+}
