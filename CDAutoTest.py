@@ -16,11 +16,12 @@ end_time = ''
 spn_dict = {}
 pgn_dict = {}
 pgn_list = []
-
+f_result = ''
 
                
 def HBFC_to_xlsx(type_cd):
-    
+    global f_result
+
     # 1、读取EXCEL并获取HB表
     testcasebook = openpyxl.load_workbook('CDTestCase.xlsx') # 读取xlsx文件
     table = testcasebook.get_sheet_by_name(type_cd) # 获得指定名称的页
@@ -29,6 +30,7 @@ def HBFC_to_xlsx(type_cd):
 
     json_string = type_cd + '_CD.json'
     print(json_string)
+    f_result.write(json_string)
     # 读取HB JSON
     with open(json_string, 'r', encoding='UTF-8') as f:
         data = json.load(f)
@@ -69,7 +71,7 @@ def HBFC_to_xlsx(type_cd):
                             for cell in table['B']:
                         # print(cell.value)
                                 if pname and cell.value:
-                                    if pname.lower() in (cell.value.strip().lower()):
+                                    if pname.lower() == (cell.value.strip().lower()):
                                 # 对比完把相应的值给写入
                                         table.cell(row=cell.row, column=7).value = pvalue
 
@@ -116,6 +118,9 @@ def PGNHexToDec(pgn, hexStr):
                     elif spn == '588':
                         spnResult = spnResult.split('*')[2]
                     print('asccii spn值:', spnResult)
+                    content = 'asccii spn值:' + spnResult
+                    f_result.write(content)
+
                 else:
                     if 'byte' in unit:
                         postionArr = []
@@ -133,14 +138,17 @@ def PGNHexToDec(pgn, hexStr):
                                 spnResult = decNum * float(Fraction(resolution)) + float(offset)
                             else:
                                 spnResult = decNum * float(resolution) + float(offset)
-
+                            content = 'spn值:' + spnResult
                             print('spn值:', spnResult)
+                            f_result.write(content)
 
                         else:
                             hexStr1 = hexArray[int(Bpostion)-1]
                             decNum = int(hexStr1, 16)
                             spnResult = decNum * float(resolution) + float(offset)
                             print('spn值:', spnResult)
+                            content = 'spn值:' + spnResult
+                            f_result.write(content)
 
                     else:
                         # print('Bpostion===',Bpostion)
@@ -164,9 +172,14 @@ def PGNHexToDec(pgn, hexStr):
                         if 'states' in pgnRowArray[4]:
                             binResult = int(binResult, 2)
                             print('spn值:', binResult)
+                            content = 'spn值:' + binResult
+                            f_result.write(content)
+
                         else:
                             binResult = int(binResult, 2) * float(resolution) + float(offset)
                             print('spn值:', binResult)
+                            content = 'spn值:' + binResult
+                            f_result.write(content)
 
 
 # -----------------------------------------快照参数的对比----------------------------------------------------------------
@@ -193,6 +206,8 @@ def read_hb_json(fn_json):
         # occurrence_date_time是UTC时间+8小时
         occurrence_date_time = utc_dt + timedelta(hours=8)
         print(f'\n{fn_json} occurrence_date_time == {occurrence_date_time}')
+        f_result.write(f'\n{fn_json} occurrence_date_time == {occurrence_date_time}')
+
         # 此条HB报文开始时间和结束时间，可以多找几分钟
         start_time = (occurrence_date_time + timedelta(seconds=-25)).strftime("%H:%M:%S.%f")
         end_time = (occurrence_date_time + timedelta(seconds=25)).strftime("%H:%M:%S.%f")
@@ -242,6 +257,9 @@ def read_hex_csv():
     df['NewTime'] = df['NewTime'].apply(lambda x: x.rsplit('.', 1)[0])
 
     global start_time, end_time, pgn_list
+    f_result.write('\n'+ start_time)
+    f_result.write('\n' + end_time)
+
     print(start_time)
     print(end_time)
     df = df[(df['Time'] > str(start_time)) & (df['Time'] < str(end_time))]
@@ -284,8 +302,11 @@ def read_hex_csv():
                 fail_spn_dict[item] = spn_dict[item]
         if not_found:
             print(f'\tcompare pgn {pgn} fail hex={spn_pgn_dict} <==> HB={fail_spn_dict}')
+            f_result.write(f'\n\tcompare pgn {pgn} fail hex={spn_pgn_dict} <==> HB={fail_spn_dict}')
+
         else:
             print(f'\tcompare pgn {pgn} success hex={spn_pgn_dict} <==> HB={fail_spn_dict}')
+            f_result.write(f'\n\tcompare pgn {pgn} success hex={spn_pgn_dict} <==> HB={fail_spn_dict}')
 
 
 
@@ -404,10 +425,13 @@ def hex_pgn_to_spn(pgn, hexStr):
                     
 
 def compare_hb_hex(type_cd):
+    global f_result
     json_string = type_cd + '_CD.json'
+    f_result = open('result.txt', 'w')
     HBFC_to_xlsx(type_cd)
     read_hb_json(json_string)
     read_hex_csv()
+    f_result.close()
 
 if __name__ == '__main__':
 
